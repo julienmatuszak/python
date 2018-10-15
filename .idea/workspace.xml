@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2abd6a68-e198-406e-af78-db42209c2d33" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Scripting Academy/Python Scripting Academy Unit 1/Module 1.1/MOD01_1-1.1_Intro_Python.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Scripting Academy/Python Scripting Academy Unit 1/Module 1.1/MOD01_1-1.2_Intro_Python.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Python Scripting Academy/Python Scripting Academy Unit 1/Module 1.1/MOD01_1-1.2_Intro_Python.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Scripting Academy/Python Scripting Academy Unit 1/Module 1.1/MOD01_1-1.3_Intro_Python.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Python Scripting Academy/Python Scripting Academy Unit 1/Module 1.1/MOD01_1-1.3_Intro_Python.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Scripting Academy/Python Scripting Academy Unit 1/Module 1.1/MOD01_1-1.4_Intro_Python.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Python Scripting Academy/Python Scripting Academy Unit 1/Module 1.1/MOD01_1-1.4_Intro_Python.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Scripting Academy/Python Scripting Academy Unit 1/Module 1.1/MOD01_1-1.5_Intro_Python.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Python Scripting Academy/Python Scripting Academy Unit 1/Module 1.1/MOD01_1-1.5_Intro_Python.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Scripting Academy/Python Scripting Academy Unit 1/Module 1.1/Practice_MOD01_1-1_IntroPy.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Python Scripting Academy/Python Scripting Academy Unit 1/Module 1.1/Practice_MOD01_1-1_IntroPy.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Scripting Academy/Python Scripting Academy Unit 1/Required_FINAL_Project_IntroPy.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Python Scripting Academy/Python Scripting Academy Unit 1/Required_FINAL_Project_IntroPy.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Scripting Academy/Python Scripting Academy Unit 2/.idea/Dev274x_Introduction_to_Python_Unit_2.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Scripting Academy/Python Scripting Academy Unit 2/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Scripting Academy/Python Scripting Academy Unit 2/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Scripting Academy/Python Scripting Academy Unit 2/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Scripting Academy/Python Scripting Academy Unit 2/.ipynb_checkpoints" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Scripting Academy/Python Scripting Academy Unit 2/.library.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Scripting Academy/Python Scripting Academy Unit 2/Module 1/Mod1_2-1.1_Intro_Python.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Scripting Academy/Python Scripting Academy Unit 2/Module 1/Mod1_2-1.2_Intro_Python.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Scripting Academy/Python Scripting Academy Unit 2/Module 1/Mod1_2-1.3_Intro_Python.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Scripting Academy/Python Scripting Academy Unit 2/Module 1/Mod1_2-1.4_Intro_Python.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Scripting Academy/Python Scripting Academy Unit 2/Module 1/Mod1_2-1_IntroPy_Practice.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Scripting Academy/Python Scripting Academy Unit 2/Module 1/Required_Code_MOD1_IntroPy.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Scripting Academy/Python Scripting Academy Unit 2/Module 2/Mod2_2-2.1_Intro_Python.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Scripting Academy/Python Scripting Academy Unit 2/Module 2/Mod2_2-2.2_Intro_Python.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Scripting Academy/Python Scripting Academy Unit 2/Module 2/Mod2_2-2.3_Intro_Python.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Scripting Academy/Python Scripting Academy Unit 2/Module 2/Mod2_2-2.4_Intro_Python.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Scripting Academy/Python Scripting Academy Unit 2/Module 2/Mod2_2-2_introPy_Practice.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Scripting Academy/Python Scripting Academy Unit 2/Module 2/Required_Code_MOD2_IntroPy.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Scripting Academy/Python Scripting Academy Unit 2/Module 3/Mod3_2-3.1_intro_Python.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Scripting Academy/Python Scripting Academy Unit 2/Module 3/Mod3_2-3.2_intro_Python.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Scripting Academy/Python Scripting Academy Unit 2/Module 3/Mod3_2-3.3_intro_Python.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Scripting Academy/Python Scripting Academy Unit 2/Module 3/Mod3_2-3.4_intro_Python.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Scripting Academy/Python Scripting Academy Unit 2/Module 3/Mod3_2-3_IntroPy_Practice.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Scripting Academy/Python Scripting Academy Unit 2/Module 3/Required_Code_MOD3_IntroPy.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Scripting Academy/Python Scripting Academy Unit 2/Module 4/Mod4_2-4.1_intro_Python.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Scripting Academy/Python Scripting Academy Unit 2/Module 4/Mod4_2-4.2_Intro_Python.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Scripting Academy/Python Scripting Academy Unit 2/Module 4/Mod4_2-4.3_Intro_Python.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Scripting Academy/Python Scripting Academy Unit 2/Module 4/Mod4_2-4.4_Intro_Python.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Scripting Academy/Python Scripting Academy Unit 2/Module 4/Mod4_2-4_IntroPy_Practice.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Scripting Academy/Python Scripting Academy Unit 2/Module 4/Required_Code_MOD4_IntroPy.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Scripting Academy/Python Scripting Academy Unit 2/Required_FINAL_Project_IntroPy.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Scripting Academy/Python Scripting Academy Unit 3/.idea/Dev330x_Introduction_to_Python_Unit_3.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Scripting Academy/Python Scripting Academy Unit 3/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Scripting Academy/Python Scripting Academy Unit 3/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Scripting Academy/Python Scripting Academy Unit 3/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Scripting Academy/Python Scripting Academy Unit 3/.ipynb_checkpoints" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Scripting Academy/Python Scripting Academy Unit 3/.library.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Scripting Academy/Python Scripting Academy Unit 3/Final_Required_Code.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Scripting Academy/Python Scripting Academy Unit 3/Module 1/3-1.1_intro_Python.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Scripting Academy/Python Scripting Academy Unit 3/Module 1/3-1.2_intro_Python.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Scripting Academy/Python Scripting Academy Unit 3/Module 1/3-1.3_intro_Python.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Scripting Academy/Python Scripting Academy Unit 3/Module 1/3-1.4_intro_Python.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Scripting Academy/Python Scripting Academy Unit 3/Module 1/3-1.5_Mod01_Practice.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Scripting Academy/Python Scripting Academy Unit 3/Module 1/Required_Code_Mod01.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Scripting Academy/Python Scripting Academy Unit 3/Module 2/3-2.1_intro_Python.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Scripting Academy/Python Scripting Academy Unit 3/Module 2/3-2.2_intro_Python.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Scripting Academy/Python Scripting Academy Unit 3/Module 2/3-2.3_intro_Python.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Scripting Academy/Python Scripting Academy Unit 3/Module 2/3-2.4_intro_Python.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Scripting Academy/Python Scripting Academy Unit 3/Module 2/3-2.5_Mod02_Practice.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Scripting Academy/Python Scripting Academy Unit 3/Module 2/Required_Code_Mod02.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Scripting Academy/Python Scripting Academy Unit 3/Module 3/3-3.1_intro_Python.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Scripting Academy/Python Scripting Academy Unit 3/Module 3/3-3.2_intro_Python.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Scripting Academy/Python Scripting Academy Unit 3/Module 3/3-3.3_intro_Python.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Scripting Academy/Python Scripting Academy Unit 3/Module 3/3-3.4_intro_Python.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Scripting Academy/Python Scripting Academy Unit 3/Module 3/3-3.5_Mod03_Practice.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Scripting Academy/Python Scripting Academy Unit 3/Module 3/Required_Code_Mod03.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Scripting Academy/Python Scripting Academy Unit 3/Module 4/3-4.1_intro_Python.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Scripting Academy/Python Scripting Academy Unit 3/Module 4/3-4.2_intro_Python.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Scripting Academy/Python Scripting Academy Unit 3/Module 4/3-4.3_intro_Python.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Scripting Academy/Python Scripting Academy Unit 3/Module 4/3-4.4_intro_Python.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Scripting Academy/Python Scripting Academy Unit 3/Module 4/3-4.5_Mod04_Practice.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Scripting Academy/Python Scripting Academy Unit 3/Module 4/Required_Code_Mod04.ipynb" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="518342692">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="6" />
+          <entry key="project.open.time.0" value="2" />
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.3" value="3" />
+          <entry key="project.opened" value="6" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="ipynb" value="28" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="IPNB" value="28" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="py" value="193" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Python" value="193" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.vcs.git.usages" />
+      <usages-collector id="statistics.js.language.service.starts" />
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Python Scripting Academy/Python Scripting Academy Unit 1/Module 1.1/MOD01_1-1.1_Intro_Python.ipynb">
+          <provider selected="true" editor-type-id="ipnb-editor">
+            <state>
+              <selected id="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Python Scripting Academy/Python Scripting Academy Unit 1/Module 1.1/MOD01_1-1.2_Intro_Python.ipynb">
+          <provider selected="true" editor-type-id="ipnb-editor">
+            <state>
+              <selected id="0" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Python Scripting Academy/Python Scripting Academy Unit 1/Module 1.1/MOD01_1-1.3_Intro_Python.ipynb">
+          <provider selected="true" editor-type-id="ipnb-editor">
+            <state>
+              <selected id="0" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Python Scripting Academy/Python Scripting Academy Unit 1/Module 1.1/Practice_MOD01_1-1_IntroPy.ipynb">
+          <provider selected="true" editor-type-id="ipnb-editor">
+            <state>
+              <selected id="0" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Python Scripting Academy/Python Scripting Academy Unit 1/Module 1.1/.ipynb_checkpoints/MOD01_1-1.1_Intro_Python-checkpoint.ipynb" />
+        <option value="$PROJECT_DIR$/Python Scripting Academy/Python Scripting Academy Unit 1/Module 1.1/MOD01_1-1.1_Intro_Python.ipynb" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="61" />
+    <option name="width" value="1400" />
+    <option name="height" value="810" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="python" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="python" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python" type="462c0819:PsiDirectoryNode" />
+              <item name="Python Scripting Academy" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="python" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python" type="462c0819:PsiDirectoryNode" />
+              <item name="Python Scripting Academy" type="462c0819:PsiDirectoryNode" />
+              <item name="Python Scripting Academy Unit 1" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="python" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python" type="462c0819:PsiDirectoryNode" />
+              <item name="Python Scripting Academy" type="462c0819:PsiDirectoryNode" />
+              <item name="Python Scripting Academy Unit 1" type="462c0819:PsiDirectoryNode" />
+              <item name="Module 1.1" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Python Scripting Academy/Python Scripting Academy Unit 1/Module 1.1" />
+      <recent name="$PROJECT_DIR$/Python Scripting Academy/Python Scripting Academy Unit 1" />
+      <recent name="$PROJECT_DIR$/Python Scripting Academy/Python Scripting Academy Unit 1/Module 1.1/.ipynb_checkpoints" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2abd6a68-e198-406e-af78-db42209c2d33" name="Default Changelist" comment="" />
+      <created>1539535473314</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1539535473314</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="61" width="1400" height="810" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26804122" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="11" />
+      <window_info anchor="bottom" id="Python Console" order="12" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Python Scripting Academy/Python Scripting Academy Unit 1/Module 1.1/.ipynb_checkpoints/MOD01_1-1.1_Intro_Python-checkpoint.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python Scripting Academy/Python Scripting Academy Unit 1/Module 1.1/MOD01_1-1.1_Intro_Python.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python Scripting Academy/Python Scripting Academy Unit 1/Module 1.1/MOD01_1-1.2_Intro_Python.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python Scripting Academy/Python Scripting Academy Unit 1/Module 1.1/MOD01_1-1.3_Intro_Python.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python Scripting Academy/Python Scripting Academy Unit 1/Module 1.1/Practice_MOD01_1-1_IntroPy.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="0" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
