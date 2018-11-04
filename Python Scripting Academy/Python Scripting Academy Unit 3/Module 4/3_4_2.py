@@ -107,8 +107,7 @@ def USD2GBP(amount):
     Convert amount from US Dollars to British Pounds.    
     The conversion rate is unknown, you have to use USD2EUR and EUR2GBP    
     args:
-        amount: US dollar amount (float)
-        
+        amount: US dollar amount (float)       
     returns:
         value: the equivalent of amount in British Pounds (float)
     """
@@ -142,4 +141,47 @@ amount = 220 #USD
 inr = USD2INR(amount)
 print("${} = {}".format(amount, inr))
 
+# [x] The following program calculates the equivalent of $220 USD in Indian Rupees, 
+# then updates the exchange rate and performs the conversion again
+# Complete the functions USD2INR and change_rate so they function according to the specifications below
+XCHANGE_RATE = 63.6856 # = 1 USD
+def USD2INR(amount):
+    """
+    Convert amount from US Dollars to Indian Rupees.   
+    Use XCHANGE_RATE   
+    args:
+        amount: US dollar amount (float)       
+    returns:
+        value: the equivalent of amount in Indian Rupees (float)
+    """
+    value = XCHANGE_RATE*amount
+    return value
+def change_rate():
+    """
+    Change the exchange rate to 63.6782   
+    args:
+        None   
+    returns:
+        None
+    """
+    global XCHANGE_RATE
+    XCHANGE_RATE = 63.6782   
+print("Current exchange rate $1 USD = {} INR".format(XCHANGE_RATE))
+amount = 220 #USD
+inr = USD2INR(amount)
+print("${} = {}".format(amount, inr))
+print()
+change_rate()
+print("After changing the exchange rate $1 USD = {} INR".format(XCHANGE_RATE))
+inr = USD2INR(amount)
+print("${} = {}".format(amount, inr))
 
+# [x] In the following program, the function `flip()` is designed to reverse the order of the elements in NUMBERS
+# Fix the `UnboundLocalError` exception without changing the expression (NUMBERS = NUMBERS[-1:0:-1])
+NUMBERS = [1, 2, 3, 4, 5, 6]
+def flip():
+    global NUMBERS
+    NUMBERS = NUMBERS[-1::-1]
+print("Before flipping, NUMBERS =", NUMBERS)
+flip()
+print("After flipping, NUMBERS =", NUMBERS)
