@@ -1,4 +1,3 @@
-%%writefile cipher.py
 import argparse
 import os
 def parse_command_line():
@@ -214,6 +213,3 @@ def main():
             write_file(outstring, "decrypted_by_" + str(k) + ".txt")  
 if __name__ == '__main__':
     main()
-
-%%bash
-pydoc cipher
