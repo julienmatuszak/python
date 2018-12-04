@@ -17,8 +17,8 @@ Nota Bene:
 différents qui feront office de clients. Merci donc d'exécuter également le fichier 
 ./client.py à partir de deux terminaux différents suite à l'exécution de ce fichier.
 - Comme l'énoncé laissait une certaine liberté dans l'organisation des règles du 
-jeu (à moins que je n'aie pas compris toutes 
-les consignes), j'ai décidé qu'il n'y aurait un ordre dans le tour, c'est-à-dire que 
+jeu (à moins que je n'aie pas compris toutes les consignes), j'ai décidé qu'il n'y 
+aurait que deux joueurs et qu'ils joueraient en ordre dans le tour, c'est-à-dire que 
 ça n'est pas le joueur qui jouera le plus vite qui se verra jouer en premier. J'ai 
 aussi choisi de faire passer le tour quand le joueur 'fait une erreur'.
 Enfin, percer un mur ou murer une porte compte pour un tour.
@@ -124,15 +124,8 @@ while True:
 			pass
 		else:
 			for client in clients_a_lire:
-				if client in clients_liste_entiere:
-					client.recv(1024)
-				else:
-					clients_liste_entiere.append(client)
-					directions.append(client.recv(1024).decode())
-
-
-	# Vidage du socket si le client a entré plusieurs fois une commande
-
+				clients_liste_entiere.append(client)
+				directions.append(client.recv(1024).decode())
 
 	""" On met les clients lus dans un tableau et on les range dans l'ordre pour organiser
  le tour  à tour, on fait la même chose avec les directions données par les joueurs."""
@@ -285,6 +278,8 @@ informations.
 actuels. Mais ça demande sans doute de gros efforts de proga.
 - il faudrait aussi modifier le code de manière à faire un vrai mode multi-joueurs 
 (plus de 2) mais ça demande de repenser entièrement le code.
+- on ne peut pas se déconnecter puis se reconnecter et retrouver la partie, il faudrait
+imaginer la possibilité pour le serveur de rétablir la connection.
 - autres règles possibles: on peut également imaginer, pour des raison stratégiques, 
 volontairement passer son tour, par exemple avec la commande "espace".
 """
