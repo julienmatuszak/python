@@ -12,6 +12,11 @@ import select
 connexion_avec_serveur = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 connexion_avec_serveur.connect(('localhost', 1024))
 print("On tente de se connecter au serveur...")
+
+msg_recu = connexion_avec_serveur.recv(1024).decode()
+print(msg_recu)
+
+# On affiche le labyrinthe et les positions de départ
 msg_recu = connexion_avec_serveur.recv(1024).decode()
 print(msg_recu)
 
@@ -23,9 +28,6 @@ le lire; ainsi le 'standard input' se videra et on pourra recommencer la boucle"
 while select.select([sys.stdin], [], [], 0.0) == ([sys.stdin], [], []):
 	sys.stdin.read(1)
 
-# On affiche le labyrinthe et les positions de départ
-msg_recu = connexion_avec_serveur.recv(1024).decode()
-print(msg_recu)
 commencer = input("Entrez C pour commencer à jouer : \n")
 while commencer.lower().startswith("c") is False:
 	print("Je n'ai pas compris votre requête. Veuillez recommencer s'il vous plaît.\n")
@@ -33,7 +35,7 @@ while commencer.lower().startswith("c") is False:
 connexion_avec_serveur.send(b"ok")
 print(connexion_avec_serveur.recv(1024).decode())
 
-# On vide à nouveau le standard input
+# On vide à nouveau le buffer du standard input avant de récupérer l'input souhaité
 while select.select([sys.stdin], [], [], 0.0) == ([sys.stdin], [], []):
 	sys.stdin.read(1)
 
@@ -51,12 +53,16 @@ while True:
 	connexion_avec_serveur.send(direction.encode())
 	msg_recu = connexion_avec_serveur.recv(1024).decode()
 	print(msg_recu)
-	if msg_recu == "\nFermeture de la connexion\n":
+	if msg_recu[-3:] == "\n\n\n":
 		break
 
-	""" On vide à nouveau le standard input pour pas qu'un joueur puisse déplacer son robot
-plusieurs fois de suite"""
+	""" On vide à nouveau le standard input pour qu'un joueur ne puisse pas déplacer son 
+robot plusieurs fois de suite"""
 	while select.select([sys.stdin], [], [], 0.0) == ([sys.stdin], [], []):
 		sys.stdin.read(1)
 
+# On vide une dernière fois avant de fermer la connexion
+while select.select([sys.stdin], [], [], 0.0) == ([sys.stdin], [], []):
+	sys.stdin.read(1)
+print("Fermeture de la connexion\n")
 connexion_avec_serveur.close()

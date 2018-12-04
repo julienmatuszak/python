@@ -165,7 +165,7 @@ Vérification de la présence d'une porte à murer dans la direction souhaitée.
 la chaîne le cas échéant. """
     def murer_porte(self, position, direction):
         if self.presence_porte(position, direction) is False:
-            self.message += "\nVous n'avez aucune porte à murer là ! Vous perdez votre\
+            self.message += "\nVous n'avez aucune porte à murer là ! Vous perdez votre \
 tour !\n"
         else:
             self.message += "\nVous avez muré une porte !\n"

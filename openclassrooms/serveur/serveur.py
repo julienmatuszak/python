@@ -22,6 +22,8 @@ aurait que deux joueurs et qu'ils joueraient en ordre dans le tour, c'est-à-dir
 ça n'est pas le joueur qui jouera le plus vite qui se verra jouer en premier. J'ai 
 aussi choisi de faire passer le tour quand le joueur 'fait une erreur'.
 Enfin, percer un mur ou murer une porte compte pour un tour.
+Si le même mur est percé ou la porte murée par les joueurs 1, alors la priorité va
+vers le joueur 1 car l'ordre des directions est fixé avant de modifier le labyrinthe.
 Signalons aussi que si un mur est percé ou une porte murée et que les deux joueurs se
 sont entrechoqués, l'action de percer le mur ou de murer la porte reste conséquente.
 """
@@ -106,7 +108,7 @@ joueur 1.\nAttente d'un autre joueur.\n", 'utf-8'))
 						msg_recu.append(client.recv(1024))
 					if len(msg_recu) == 2:
 						pas_commencer = False
-			print("La partie commence !\n")
+			print("La partie commence !")
 			clients_connectes[0].send(bytes("\n"+labyrinthe.chaine, 'utf-8'))
 			clients_connectes[1].send(bytes("\n"+labyrinthe_autre_chaine, 'utf-8'))
 			demarrage_du_jeu = False
@@ -149,18 +151,26 @@ while True:
 	if directions[0].lower().startswith("o"):
 		labyrinthe.message_robot, labyrinthe.robot = labyrinthe.ouest(labyrinthe.robot)
 
-# Ainsi que le cas de l'abandon
-	if directions[0].lower().startswith("q"):
-		if directions[1].lower().startswith("q"):
-			clients_connectes[0].send(bytes("\nVous abandonnez tous les deux ! Il n'y \
-a aucun gagnant. Dommage ! Au revoir !\n", 'utf-8'))
-			clients_connectes[1].send(bytes("\nVous abandonnez tous les deux ! Il n'y \
-a aucun gagnant. Dommage ! Au revoir !\n", 'utf-8'))
-		else:
-			clients_connectes[0].send(bytes("\nVous abandonnez ! Dommage ! Au revoir \
-!\n", 'utf-8'))
-			clients_connectes[1].send(bytes("\nLe joueur 1 abandonne ! Bravo, vous \
-avez gagné !\n", 'utf-8'))
+# Ainsi que le cas de l'abandon (pour les deux robots)
+	if directions[0].lower().startswith("q") and directions[1].lower().startswith("q"):
+		clients_connectes[0].send(bytes("\nVous abandonnez tous les deux ! Il n'y a \
+aucun gagnant. Dommage ! Au revoir !\n\n\n", 'utf-8'))
+		clients_connectes[1].send(bytes("\nVous abandonnez tous les deux ! Il n'y a \
+aucun gagnant. Dommage ! Au revoir !\n\n\n", 'utf-8'))
+		break
+	if directions[0].lower().startswith("q") and directions[1].lower().startswith("q")\
+ is False:
+		clients_connectes[0].send(bytes("\nVous abandonnez ! Dommage ! Au revoir \
+!\n\n\n", 'utf-8'))
+		clients_connectes[1].send(bytes("\nLe joueur 1 abandonne ! Bravo, vous \
+avez gagné !\n\n\n", 'utf-8'))
+		break
+	if directions[0].lower().startswith("q") is False and directions[1].lower().\
+startswith("q"):
+		clients_connectes[0].send(bytes("\nLe joueur 2 abandonne ! Bravo, vous avez \
+gagné !\n\n\n", 'utf-8'))
+		clients_connectes[1].send(bytes("\nVous abandonnez ! Dommage ! Au revoir \
+!\n\n\n", 'utf-8'))
 		break
 
 # On continue avec la fonctionnalité 'percer un mur' (ou pas).
@@ -187,13 +197,7 @@ avez gagné !\n", 'utf-8'))
 	if directions[1].lower().startswith("o"):
 		labyrinthe.message_autre_robot, labyrinthe.autre_robot = labyrinthe.ouest\
 		(labyrinthe.autre_robot)
-	if directions[1].lower().startswith("q"):
-		if directions[0].lower().startswith("q"):
-			clients_connectes[0].send(bytes("\nLe joueur 2 abandonne ! Bravo, vous avez \
-gagné !\n", 'utf-8'))
-			clients_connectes[1].send(bytes("\nVous abandonnez ! Dommage ! Au revoir \
-!\n", 'utf-8'))
-		break
+
 	if directions[1].lower().startswith("p"):	
 		labyrinthe.message_autre_robot = labyrinthe.percer_mur(labyrinthe.autre_robot, \
 			directions[1].lower()[1])
@@ -216,18 +220,18 @@ positions respectives.\n"
 		labyrinthe.chaine = labyrinthe.deplacer()
 		labyrinthe_autre_chaine = labyrinthe.inverser_robots()
 		clients_connectes[0].send(bytes("\nVous avez atteint la sortie en premier ! Bravo, \
-vous avez gagné !\n\n"+labyrinthe.chaine, 'utf-8'))
+vous avez gagné !\n\n"+labyrinthe.chaine+"\n\n\n", 'utf-8'))
 		clients_connectes[1].send(bytes("\nLe joueur 1 a atteint la sortie en premier ! \
-Vous avez perdu ! Au revoir !\n\n"+labyrinthe_autre_chaine, 'utf-8'))
+Vous avez perdu ! Au revoir !\n\n"+labyrinthe_autre_chaine+"\n\n\n", 'utf-8'))
 		break
 
 	if labyrinthe.autre_robot == labyrinthe.sortie:
 		labyrinthe.chaine = labyrinthe.deplacer()
 		labyrinthe_autre_chaine = labyrinthe.inverser_robots()
 		clients_connectes[0].send(bytes("\nLe joueur 2 a atteint la sortie en premier ! \
-Vous avez perdu ! Au revoir !\n\n"+labyrinthe.chaine, 'utf-8'))
+Vous avez perdu !\n\n"+labyrinthe.chaine+"\n\n\n", 'utf-8'))
 		clients_connectes[1].send(bytes("\nVous avez atteint la sortie en premier ! Bravo, \
-vous avez gagné !\n\n"+labyrinthe_autre_chaine, 'utf-8'))
+vous avez gagné !\n\n"+labyrinthe_autre_chaine+"\n\n\n", 'utf-8'))
 		break
 
 # Modification des chaînes et envoi aux clients.
@@ -247,9 +251,8 @@ vous avez gagné !\n\n"+labyrinthe_autre_chaine, 'utf-8'))
 
 """Une fois le jeu terminé, on ferme toutes les connexions des joueurs et la connexion 
 principale et le tour est joué !"""
-print("Fermeture des connexions\n")
+print("La partie est terminée !\nFermeture des connexions")
 for client in clients_connectes:
-	client.send(bytes("\nFermeture de la connexion\n", 'utf-8'))
 	client.close()
 connexion_principale.close()
 
@@ -280,6 +283,9 @@ actuels. Mais ça demande sans doute de gros efforts de proga.
 (plus de 2) mais ça demande de repenser entièrement le code.
 - on ne peut pas se déconnecter puis se reconnecter et retrouver la partie, il faudrait
 imaginer la possibilité pour le serveur de rétablir la connection.
+- un problème se pose également dans le cas où les deux joueurs sont à une case de la sortie;
+les deux voudront bien sûr aller dans cette case. On peut imagner une égalité dans ce cas car
+sinon l'avantage va au joueur 1, ce qui est injuste.
 - autres règles possibles: on peut également imaginer, pour des raison stratégiques, 
 volontairement passer son tour, par exemple avec la commande "espace".
 """
